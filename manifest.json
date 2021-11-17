@@ -1,0 +1,32 @@
+{
+	"name": "智慧美容快捷工具",
+	"version": "0.1",
+	"description": "windows:按Alt+M开启  \nmac:按Control+M开启",
+	"icons": {
+		"16": "logo.png",
+		"32": "logo.png",
+		"48": "logo.png",
+		"128": "logo.png"
+	},
+	"browser_action": {
+		"default_icon": "logo.png"
+	},
+	"commands": {
+		"toggle-tags": {
+			"suggested_key": {
+				"default": "Alt+M",
+				"mac": "MacCtrl+M"
+			},
+			"description": "Toggle Tags"
+		}
+	},
+	"chrome_url_overrides" : {
+		"newtab": "blank.html"
+	},
+	"manifest_version": 2,
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	}
+}
